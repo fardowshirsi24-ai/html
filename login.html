@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+body > div {
+    background: #ffffff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4e73df;
+}
+
+/* Login button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #4e73df;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #2e59d9;
+}
+
+/* Links section */
+div p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+div p a {
+    color: #4e73df;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div p a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <div>
+        <h2> welcome</h2>
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+
+        <div>
+            <p><a href="#">forget password</a></p>
+            <p>don't have an account? <a href="#">register</a></p>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+</html>
