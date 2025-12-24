@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px; /* smaller navbar */
+    background: #764ba2;
+    color: #fff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    width: 50px;     /* smaller profile image in navbar */
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.nav-left span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 8px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #667eea;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    width: 80%;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #764ba2;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Contact */
+.contact p {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        font-size: 18px;
+    }
+}
